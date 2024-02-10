@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <title>Registro de Clientes - Oficina Mecânica</title>
+</head>
+<body>
+   <h1>Registro de Clientes - Oficina Mecânica</h1>
+
+   <form id="customerForm">
+      <label for="name">Nome:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="quantity">Quantidade:</label>
+      <input type="number" id="quantity" name="quantity" required>
+
+         <label for="value">Valor:</label>
+         <input type="text" id="value" name="value" required>
+
+         <label for="parts">Peças:</label>
+         <input type="text" id="parts" name="parts" required>
+
+         <label for="description">Descrição:</label>
+         <textarea id="description" name="description" required></textarea>
+
+         <label for="plate">Placa:</label>
+         <input type="text" id="plate" name="plate" required>
+
+         <label for="vehicleType">Veículo:</label>
+         <input type="text" id="vehicleType" name="vehicleType" required>
+
+         <button type="button" onclick="submitForm()">Registrar Cliente</button>
+   </form>
+
+   <table id="customerTable">
+      <thead>
+            <tr>
+               <th>Nome</th>
+               <th>Quantidade</th>
+               <th>Valor</th>
+               <th>Peças</th>
+               <th>Descrição</th>
+               <th>Placa</th>
+               <th>Veículo</th>
+            </tr>
+      </thead>
+      <tbody id="customerList"></tbody>
+   </table>
+
+   <script src="script.js"></script>
+</body>
+</html>
